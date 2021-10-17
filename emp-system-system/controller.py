@@ -4,6 +4,7 @@ import mod.show_specific as spe
 import mod.removeemp as remove
 import mod.show_emp as fetch
 import mod.search as find
+import mod.login as check
 
 
 
@@ -107,3 +108,14 @@ def search():
 
 
 
+def user_is_valid():
+    obj = check.login()
+    print("\n")
+    print("\t\thi login First")
+    username = input("\t\tUsername :")
+    password = input("\t\tPassword :")
+    if(obj.isvalid(username,password) == False):
+        print("\t\t** username or password is wrong")
+        user_is_valid()
+    else:
+        print("\t\tLogin successfuly!!!!")

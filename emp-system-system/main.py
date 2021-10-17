@@ -1,5 +1,10 @@
 import os
+from typing import Container
 import controller
+
+
+controller.user_is_valid()
+
 
 while True:
     os.system("cls")
