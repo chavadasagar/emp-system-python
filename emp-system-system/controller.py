@@ -88,6 +88,7 @@ def showall():
 
     for x in data:
         print("\t\t",x,"\n")
+    obj.clear()
 
 def show_specific():
     print("\n")
@@ -95,6 +96,8 @@ def show_specific():
     obj = spe.show_specific(id)
 
     print("\t\t",obj.show())
+
+    obj.clear()
 
 def search():
     print("\n")

@@ -17,5 +17,7 @@ class show_emp:
         
     def alldata(self):
         return self.data
+    def clear(self):
+        self.data.clear()
 
         
